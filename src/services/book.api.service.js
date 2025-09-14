@@ -6,7 +6,7 @@ const getAllBookAPI = async (current, pageSize) => {
     const config = {
         headers: { Authorization: `Bearer ${token}` },
     };
-    const URL_BACKEND = `${BASE_URL}/api/v1/book?current=${current}&pageSize=${pageSize}`;
+    const URL_BACKEND = `/api/v1/book?current=${current}&pageSize=${pageSize}`;
     const res = await axios.get(URL_BACKEND, config);
     return res.data;
 };
@@ -36,7 +36,7 @@ const createBookAPI = async (title, author, price, quantity, category, thumbnail
     const config = {
         headers: { Authorization: `Bearer ${token}` },
     };
-    const URL_BACKEND = `${BASE_URL}/api/v1/book`;
+    const URL_BACKEND = `/api/v1/book`;
     const res = await axios.post(URL_BACKEND, data, config);
     return res.data;
 };
@@ -54,7 +54,7 @@ const updateBookAPI = async (title, author, price, quantity, category, thumbnail
     const config = {
         headers: { Authorization: `Bearer ${token}` },
     };
-    const URL_BACKEND = `${BASE_URL}/api/v1/book`;
+    const URL_BACKEND = `/api/v1/book`;
     const res = await axios.put(URL_BACKEND, data, config);
     return res.data;
 };
@@ -64,7 +64,7 @@ const deleteBookAPI = async (id) => {
     const config = {
         headers: { Authorization: `Bearer ${token}` },
     };
-    const URL_BACKEND = `${BASE_URL}/api/v1/book/${id}`;
+    const URL_BACKEND = `/api/v1/book/${id}`;
     const res = await axios.delete(URL_BACKEND, config);
     return res.data;
 };
