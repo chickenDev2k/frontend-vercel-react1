@@ -1,0 +1,40 @@
+.todo-title {
+   font-size: 72px;
+   font-weight: 600;
+  background: -webkit-linear-gradient(#ff0000, #ed843e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+.add-block {
+    margin: 20px auto;
+}
+.add-block input , .add-block button {
+    border: none;
+    height: 50px;
+    border-radius: 12px;
+
+}
+.add-block input {
+    background-color: #e9e8e7;
+    padding: 0 20px;
+
+}
+.add-block button {
+    width: 100px;
+    background-color: rgb(74, 74, 254);
+    color: white;
+    margin: 0 10px;
+}
+
+.todo-data {
+    border: 1px solid black;
+    width: 70%;
+    margin: 10px auto;
+    padding: 20px;
+}
+.todo-item {
+    display: flex
+;
+    justify-content: space-between;
+}
